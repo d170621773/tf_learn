@@ -113,5 +113,6 @@ resource "aws_nat_gateway" "nat_gateway" {
   subnet_id     = aws_subnet.public_subnets["public_subnet_1"].id
   tags = {
     Name = "demo_nat_gateway"
+    Terraform = "True"
   }
 }
